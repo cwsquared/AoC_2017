@@ -24,7 +24,7 @@ namespace AoC_2017
             Day02.PartTwo(dayTwoInput);
 
             Console.WriteLine("\n===== Day 03 =====");
-            string[] dayThreeInput = File.ReadAllLines(@"day3.txt", Encoding.UTF8);
+            string dayThreeInput = "361527";
 
             Day03.PartOne(dayThreeInput);
             Day03.PartTwo(dayThreeInput);
