@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.IO;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace AoC_2017
 {
@@ -20,7 +16,7 @@ namespace AoC_2017
             DayOne.PartOne(dayOneInput);
             DayOne.PartTwo(dayOneInput);
 
-            
+
             Console.WriteLine("\n===== Day 02 =====");
             string[] dayTwoInput = File.ReadAllLines(@"day2.txt", Encoding.UTF8);
 

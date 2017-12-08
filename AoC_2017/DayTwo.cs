@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 
 namespace AoC_2017
 {
@@ -37,9 +38,30 @@ namespace AoC_2017
         {
             int sum = 0;
 
+            foreach (string line in input)
+            {
+                string[] values = line.Split('\t');
+                int value = 0;
 
+                for (int i = 0; i < values.Length; i++)
+                {
+                    int iValue = int.Parse(values[i]);
+                    for (int j = 0; j < values.Length; j++)
+                    {
+                        int jValue = int.Parse(values[j]);
+                        if (iValue > jValue && iValue % jValue == 0)
+                        {
+                            value = iValue / jValue;
+                            break;
+                        }
+                    }
 
-            Console.WriteLine($"The Day 2, Part 1 solution is: {sum}");
+                }
+
+                sum += value;
+            }
+
+            Console.WriteLine($"The Day 2, Part 2 solution is: {sum}");
         }
     }
 }
