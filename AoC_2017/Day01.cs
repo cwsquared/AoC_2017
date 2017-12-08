@@ -2,7 +2,7 @@
 
 namespace AoC_2017
 {
-    class DayOne
+    class Day01
     {
         public static void PartOne(string input)
         {

@@ -3,7 +3,7 @@ using System.Runtime.CompilerServices;
 
 namespace AoC_2017
 {
-    class DayTwo
+    class Day02
     {
         public static void PartOne(string[] input)
         {
