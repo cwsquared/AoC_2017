@@ -24,10 +24,10 @@ namespace AoC_2017
             Day02.PartTwo(dayTwoInput);
 
             Console.WriteLine("\n===== Day 03 =====");
-            string dayThreeInput = "361527";
+            int dayThreeInput = 361527;
 
-            Day03.PartOne(dayThreeInput);
-            Day03.PartTwo(dayThreeInput);
+            Console.WriteLine($"Day 3, Part 1 - Input: {dayThreeInput}, Solution: {Day03.PartOne(dayThreeInput)}");
+            //Day03.PartTwo(dayThreeInput);
 
             Console.ReadLine();
         }

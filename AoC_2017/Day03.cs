@@ -2,14 +2,28 @@
 
 namespace AoC_2017
 {
-    internal class Day03
+    class Day03
     {
-        internal static void PartOne(string dayThreeInput)
+        public static int PartOne(int dayThreeInput)
         {
-            throw new NotImplementedException();
+            int currOddNumber = -1;
+            int currOddSquare = 0;
+
+            do
+            {
+                currOddNumber += 2;
+                currOddSquare = (int) Math.Pow((double) (currOddNumber), 2.0);
+                
+            } while (currOddSquare < dayThreeInput);
+
+            int deltaSquareToEnd = currOddSquare - dayThreeInput;
+            int halfSideDist = (currOddNumber - 1) / 2;
+            int distance = halfSideDist + (halfSideDist - (deltaSquareToEnd % (currOddNumber - 1)));
+
+            return distance;
         }
 
-        internal static void PartTwo(string dayThreeInput)
+        public static void PartTwo(int dayThreeInput)
         {
             throw new NotImplementedException();
         }
