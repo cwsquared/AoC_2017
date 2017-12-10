@@ -27,7 +27,8 @@ namespace AoC_2017
             int dayThreeInput = 361527;
 
             Console.WriteLine($"Day 3, Part 1 - Input: {dayThreeInput}, Solution: {Day03.PartOne(dayThreeInput)}");
-            //Day03.PartTwo(dayThreeInput);
+            Day03.PartTwo(dayThreeInput);
+
 
             Console.ReadLine();
         }

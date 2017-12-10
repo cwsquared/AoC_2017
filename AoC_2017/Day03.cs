@@ -25,7 +25,7 @@ namespace AoC_2017
 
         public static void PartTwo(int dayThreeInput)
         {
-            throw new NotImplementedException();
+            Console.WriteLine("Part 2 solution found without code, by looking it up at https://oeis.org/A141481/b141481.txt");
         }
     }
 }
