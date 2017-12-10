@@ -33,7 +33,7 @@ namespace AoC_2017
             string[] dayFourInput = File.ReadAllLines(@"..\..\day04.txt", Encoding.UTF8);
 
             Console.WriteLine($"Part 1 solution: {Day04.PartOne(dayFourInput)}");
-            
+            Console.WriteLine($"Part 2 solution: {Day04.PartTwo(dayFourInput)}");
 
             Console.ReadLine();
         }
