@@ -18,7 +18,7 @@ namespace AoC_2017
 
 
             Console.WriteLine("\n===== Day 02 =====");
-            string[] dayTwoInput = File.ReadAllLines(@"day2.txt", Encoding.UTF8);
+            string[] dayTwoInput = File.ReadAllLines(@"..\..\day02.txt", Encoding.UTF8);
 
             Day02.PartOne(dayTwoInput);
             Day02.PartTwo(dayTwoInput);
@@ -29,6 +29,10 @@ namespace AoC_2017
             Console.WriteLine($"Day 3, Part 1 - Input: {dayThreeInput}, Solution: {Day03.PartOne(dayThreeInput)}");
             Day03.PartTwo(dayThreeInput);
 
+            Console.WriteLine("\n===== Day 04 =====");
+            string[] dayFourInput = File.ReadAllLines(@"..\..\day04.txt", Encoding.UTF8);
+
+            Console.WriteLine($"Part 1 solution: {Day04.PartOne(dayFourInput)}");
 
             Console.ReadLine();
         }
