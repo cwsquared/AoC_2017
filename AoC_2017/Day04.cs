@@ -1,4 +1,7 @@
-﻿namespace AoC_2017
+﻿using System;
+using System.Linq;
+
+namespace AoC_2017
 {
     public class Day04
     {
@@ -6,7 +9,15 @@
         {
             int numValid = 0;
 
-            //TODO
+            foreach (string passphrase in passphrases)
+            {
+                string[] words = passphrase.Split(' ');
+                string[] distinctWords = words.Distinct().ToArray();
+                if (distinctWords.Length == words.Length)
+                {
+                    numValid++;
+                }
+            }
 
             return numValid;
         }
